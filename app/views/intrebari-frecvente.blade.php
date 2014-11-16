@@ -63,7 +63,7 @@
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
       aceasta suma este folosita pentru a alimenta cu credit cartela de pe care sunt trimise SMS-urile si pentru a imbunatatii configuratia hardware a proiectului;</li>
-    <li>Daca esti developer si doresti sa contribui la codul OpenSMS o poti face prin intermediul GitHub (<a href="http://github.com/memelea" target="_blank" title="OpenSMS on GitHub">http://github.com/memelea</a>).</li>
+    <li>Daca esti developer si doresti sa contribui la codul OpenSMS o poti face prin intermediul GitHub (<a href="http://github.com/memelea/opensms" target="_blank" title="OpenSMS on GitHub">http://github.com/memelea/opensms</a>).</li>
   </ol>
 </p>
 
