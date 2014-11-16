@@ -45,7 +45,7 @@ class UserController extends \BaseController {
         $message->to(Input::get('email'))->subject('Confirmare cont - OpenSMS');
       });
 
-			return Redirect::to('user/create')->with('success', 'Felicitari, contul tau a fost creat! Te rog verifica adresa de email pentru a verifica contul');
+			return Redirect::to('user/create')->with('success', 'Felicitari, contul tau a fost creat! Te rog verifica adresa de email pentru a confirma contul');
 		}
 	}
 
@@ -59,7 +59,7 @@ class UserController extends \BaseController {
       $user->active = true;
       $user->save();
 
-      return Redirect::to('user/login')->with('success', 'Contul tau a fost activat! Te rugam sa te loghezi folosind forumarul de mai jos.');
+      return Redirect::to('user/login')->with('success', 'Contul tau a fost activat! Te rugam sa te loghezi folosind formularul de mai jos.');
     } else {
       return Redirect::to('user/login')->with('danger', 'Adresa ta de email nu a fost gasita sau contul este deja confirmat.');
     }
