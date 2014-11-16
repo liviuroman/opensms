@@ -21,7 +21,7 @@
 		<div class="jumbotron" style="text-align:left">
 			<h1><span class="label label-warning">Offline <span class="glyphicon glyphicon-off"></span></span></h1>
 			<br>
-			<p class="lead">Aplicatia OpenSMS este oprita momentan.<br />Testam versiunea LIVE si speram sa anuntam lansarea in cel mai scurt timp posibil.</p>
+			<p class="lead">Aplicatia OpenSMS este oprita momentan.<br />Efectuam cateva lucrari de mententanta speram sa revenim in cel mai scurt timp posibil.</p>
 		</div>
 
 		<div class="row marketing">
