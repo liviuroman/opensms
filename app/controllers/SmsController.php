@@ -54,9 +54,9 @@ class SmsController extends \BaseController {
       $sms->save();
 
       // comanda de trimitere mesaj
-      //SSH::run(
-      //  array('echo "'. Input::get('mesaj') .'" | sudo -u gammu gammu-smsd-inject TEXT '. Input::get('telefon'))
-      //);
+      SSH::run(
+        array('echo "'. Input::get('mesaj') .'" | sudo -u gammu gammu-smsd-inject TEXT '. Input::get('telefon'))
+      );
 
       return Redirect::to('sms')->with('success', 'Mesajul tau este in curs de trimitere');
     }

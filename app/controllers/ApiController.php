@@ -48,9 +48,9 @@ class ApiController extends BaseController {
     $sms->save();
 
     // comanda de trimitere mesaj
-    //SSH::run(
-    //  array('echo "'. $mesaj .'" | sudo -u gammu gammu-smsd-inject TEXT '. $telefon)
-    //);
+    SSH::run(
+      array('echo "'. $mesaj .'" | sudo -u gammu gammu-smsd-inject TEXT '. $telefon)
+    );
 
     return Response::json(array('success' => 'Mesajul tau este in curs de trimitere'));
 
