@@ -65,3 +65,4 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 
 /* Webmaster tools and others */
+	Route::get('google384a3eb739aea99b.html', function(){ return 'google-site-verification: google384a3eb739aea99b.html'; });
