@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master', ['page_title' => 'Intrebari frecvente - OpenSMS'])
 
 @section('content')
 <div>

@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master', ['page_title' => 'Trimite SMS gratis - OpenSMS'])
 
 @section('content')
 <div>

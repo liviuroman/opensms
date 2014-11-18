@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master', ['page_title' => 'Blocheaza numere de telefon - OpenSMS'])
 
 @section('content')
 

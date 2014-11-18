@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master', ['page_title' => 'OpenSMS - SMS gratis in orice retea din Romania'])
 
 	@section('content')
 

@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master', ['page_title' => $news->titlu . ' - OpenSMS'])
 
 @section('content')
 <div>

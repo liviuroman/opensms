@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master', ['page_title' => 'Contact - OpenSMS'])
 
 @section('content')
 <div>

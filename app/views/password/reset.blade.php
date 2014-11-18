@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master', ['page_title' => 'Resetare parola - OpenSMS'])
 
 	@section('content')
 

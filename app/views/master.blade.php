@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>OpenSMS - SMS gratis in orice retea din Romania</title>
+    <title>{{{ $page_title }}}</title>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/jumbotron-narrow.css" rel="stylesheet">
