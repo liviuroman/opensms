@@ -41,7 +41,7 @@ class UserController extends \BaseController {
 
 			$user->save();
 
-			Mail::send('emails.confirmation', array('email' => Input::get('email')), function($message) {
+			Mail::send('emails.confirmation', array('email' => Input::get('email'), 'code' => str_limit($user->api_code, 20, '')), function($message) {
         $message->to(Input::get('email'))->subject('Confirmare cont - OpenSMS');
       });
 
@@ -50,9 +50,10 @@ class UserController extends \BaseController {
 	}
 
 
-	public function confirm($email)
+	public function confirm($email, $code)
 	{
-		$user = User::where('email', '=', $email)->firstOrFail();
+    $code = str_limit($code, 20, '');
+		$user = User::where('email', '=', $email)->where('api_code', 'LIKE', $code . '%')->firstOrFail();
 
     if($user->active == false) {
 
