@@ -47,7 +47,7 @@ class UserController extends \BaseController {
       });
 
       /* trimitere notificare BOXCAR */
-      Queue::push('\Queue', array('id' => $user->id, 'name' => $user->name, 'email' => $user->email));
+      Queue::push('\Boxcar', array('id' => $user->id, 'name' => $user->name, 'email' => $user->email));
 
 			return Redirect::to('user/create')->with('success', 'Felicitari, contul tau a fost creat! Te rog verifica adresa de email pentru a confirma contul');
 		}

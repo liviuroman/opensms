@@ -1,6 +1,6 @@
 <?php
 
-class Queue
+class Boxcar
 {
 
   public function fire($job, $data)
