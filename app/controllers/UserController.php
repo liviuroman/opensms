@@ -42,7 +42,7 @@ class UserController extends \BaseController {
 			$user->save();
 
       /* trimitere email de confirmare */
-      Queue::push('\EmailNotificationOnRegistration', array('email' => Input::get('email'), 'code' => str_limit($user->api_code, 20, '')));
+      Queue::push('\EmailNotificationOnRegistration', array('email' => $user->email, 'code' => str_limit($user->api_code, 20, '')));
 
       /* trimitere notificare BOXCAR */
       Queue::push('\Boxcar', array('id' => $user->id, 'name' => $user->name, 'email' => $user->email));
