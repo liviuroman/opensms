@@ -64,5 +64,9 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 	});
 
 
+/* Push Queues */
+	Route::post('queue/push', function() { return Queue::marshal(); });
+
+
 /* Webmaster tools and others */
 	Route::get('google384a3eb739aea99b.html', function(){ return 'google-site-verification: google384a3eb739aea99b.html'; });

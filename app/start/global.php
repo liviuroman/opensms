@@ -17,6 +17,7 @@ ClassLoader::addDirectories(array(
 	app_path().'/controllers',
 	app_path().'/models',
 	app_path().'/database/seeds',
+  app_path().'/classes', // custom classes, docs: http://phpartisan.tumblr.com/post/71932049693/laravel-4-custom-class-best-practice
 
 ));
 

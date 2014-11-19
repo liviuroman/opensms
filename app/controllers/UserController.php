@@ -41,9 +41,13 @@ class UserController extends \BaseController {
 
 			$user->save();
 
+      /* trimitere email de confirmare */
 			Mail::send('emails.confirmation', array('email' => Input::get('email'), 'code' => str_limit($user->api_code, 20, '')), function($message) {
         $message->to(Input::get('email'))->subject('Confirmare cont - OpenSMS');
       });
+
+      /* trimitere notificare BOXCAR */
+      Queue::push('\Queue', array('id' => $user->id, 'name' => $user->name, 'email' => $user->email));
 
 			return Redirect::to('user/create')->with('success', 'Felicitari, contul tau a fost creat! Te rog verifica adresa de email pentru a confirma contul');
 		}
