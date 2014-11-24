@@ -71,6 +71,37 @@ class UserController extends \BaseController {
 	}
 
 
+  public function reconfirm()
+  {
+    $rules = array(
+                'email' => 'required|email|max:255'
+              );
+    $validator = Validator::make(Input::all(), $rules);
+
+    if($validator->fails()){
+      return Redirect::to('user/reconfirm')->withErrors($validator)->withInput();
+    } else {
+
+      $user = User::where('email', '=', Input::get('email'))->first();
+      
+      if($user){
+        if($user->active == 0) {
+          Mail::send('emails.confirmation', array('email' => Input::get('email'), 'code' => str_limit($user->api_code, 20, '')), function($message) {
+            $message->to(Input::get('email'))->subject('Confirmare cont - OpenSMS');
+          });
+
+          return Redirect::to('user/login')->with('success', 'Emailul de confirmare a fost trimis! Te rog verifica adresa de email pentru a confirma contul');
+        } else {
+          return Redirect::to('user/reconfirm')->with('danger', 'Acest cont a fost confirmat deja');
+        }
+      } else {
+        return Redirect::to('user/reconfirm')->with('danger', 'Adresa de email nu exista');
+      }
+    }
+
+  }
+
+
 	public function login()
 	{
 		$rules = array(

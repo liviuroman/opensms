@@ -47,6 +47,7 @@
 					</div>
 					<div class="col-ms-offset-2 col-sm-8">
 						<a href="{{ URL::to('password/remind') }}" class="btn btn-default">Am uitat parola</a>
+						<a href="{{ URL::to('user/reconfirm') }}" class="btn btn-default">Retrimite email de confirmare</a>
 					</div>
 				</div>
 			{{ Form::close() }}

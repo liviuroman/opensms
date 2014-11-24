@@ -13,6 +13,9 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 	Route::get('user/login', function(){ return View::make('user.login'); })->before('guest');
 	Route::post('user/login', 'UserController@login')->before('csrf');
 
+	Route::get('user/reconfirm', function(){ return View::make('user.reconfirm'); })->before('guest');
+	Route::post('user/reconfirm', 'UserController@reconfirm')->before('csrf');
+
 	Route::get('user/confirm/{email}/{code}', 'UserController@confirm')->before('guest');
 	Route::get('user/logout', function(){ Auth::logout(); return Redirect::to('/'); });
 
