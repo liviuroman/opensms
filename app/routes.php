@@ -63,6 +63,11 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 	 return Redirect::to('user/login')->with('danger', 'Adresa de email pe care incerci sa o validezi nu exista in baza noastra de date.');
 	});
 
+/* Custom 404 page */
+	App::missing(function($exception)
+	{
+    return Response::view('404', array(), 404);
+  });
 
 /* Push Queues */
 	Route::post('queue/push', function() { return Queue::marshal(); });
