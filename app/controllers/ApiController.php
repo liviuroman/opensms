@@ -53,6 +53,20 @@ class ApiController extends BaseController {
     );
 
     return Response::json(array('success' => 'Mesajul tau este in curs de trimitere'));
+  }
+
+
+  public function sent($api_code)
+  {
+    $auth = User::where('api_code', '=', $api_code)->first();
+
+    if($auth === null){
+      return Response::json(array('error' => 'Codul API folosit nu se gaseste in baza de date'));
+    } else {
+      $sms = Sms::where('uid', '=', $auth->id)->take(20)->get(array('telefon', 'mesaj', 'from', 'sent_at'))->toArray();;
+      
+      return $sms;
+    }
 
   }
   

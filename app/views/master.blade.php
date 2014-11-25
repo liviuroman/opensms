@@ -43,7 +43,7 @@
 
       <div class="footer">
         <p class="pull-left">&copy; <a href="{{ URL::to('/') }}">OpenSMS</a> 2014 | <a href="{{ URL::to('contact') }}">Contact</a></p>
-        <p class="pull-right">Hosted on <a href="http://www.vultr.com/?ref=6809771" target="_blank" rel="nofollow">VULTR</a></p>
+        <p class="pull-right"><a href="{{ URL::to('api') }}">API</a> | Hosted on <a href="http://www.vultr.com/?ref=6809771" target="_blank" rel="nofollow">VULTR</a></p>
       </div>
 
     </div> <!-- /container -->
