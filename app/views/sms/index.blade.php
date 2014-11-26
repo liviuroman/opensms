@@ -25,7 +25,7 @@
   <div class="form-group">
     <label for="telefon" class="col-sm-2 control-label">Telefon:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="telefon" name="telefon" value="{{ Input::old('telefon') }}" placeholder="Introdu numarul de telefon caruia vrei sa ii trimiti SMS (ex: 07XX...)" required>
+      <input type="text" class="form-control" id="telefon" name="telefon" value="{{ Input::old('telefon') }}" placeholder="Introdu numărul de telefon căruia vrei să îi trimiți SMS (ex: 07XX...)" required>
     </div>
   </div>
 

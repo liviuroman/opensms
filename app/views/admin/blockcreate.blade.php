@@ -1,10 +1,10 @@
-@extends('master', ['page_title' => 'Blocheaza numere de telefon - OpenSMS'])
+@extends('master', ['page_title' => 'Blochează numere de telefon - OpenSMS'])
 
 @section('content')
 
   @include('admin.topmenu')
   <div>
-    <h3>Blocheaza numere de telefon</h3>
+    <h3>Blochează numere de telefon</h3>
 
     @if ($errors->has())
       <div class="alert alert-danger alert-dismissible" role="alert">
@@ -19,13 +19,13 @@
       <div class="form-group">
         <label for="telefon" class="col-sm-2 control-label">Telefon:</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="telefon" name="telefon" value="{{ Input::old('telefon') }}" placeholder="Numarul de telefon pe care vrei sa il blochezi" required>
+          <input type="text" class="form-control" id="telefon" name="telefon" value="{{ Input::old('telefon') }}" placeholder="Numărul de telefon pe care vrei să îl blochezi" required>
         </div>
       </div>
       
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-success">Salveaza</button>
+          <button type="submit" class="btn btn-success">Salvează</button>
         </div>
       </div>
     {{ Form::close() }}

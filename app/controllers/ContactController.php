@@ -30,7 +30,7 @@ class ContactController extends BaseController {
         $message->to('opensms@doiochi.ro')->subject('Contact form - OpenSMS');
       });
 
-      return Redirect::to('contact')->with('success', 'Multumim, mesajul tau a fost trimis');
+      return Redirect::to('contact')->with('success', 'Mulțumim, mesajul tău a fost trimis');
     }
   }
 

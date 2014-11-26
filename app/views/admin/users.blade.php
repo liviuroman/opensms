@@ -4,7 +4,7 @@
 
   @include('admin.topmenu')
   <div>
-    <h3>Utilizatori inregistrati</h3>
+    <h3>Utilizatori înregistrați</h3>
 
     <table class="table table-hover">
       <thead>

@@ -28,8 +28,8 @@ class SmsController extends \BaseController {
 
     /* Mesajele de eroare in cazul validarii by limit/blocked */
     $messages = array(
-      'limit' => 'Ai atins limita maxima de SMS-uri pentru ziua de astazi.',
-      'blocked' => 'Nu se poate trimite mesajul catre acest numar; numarul introdus este blocat din cauza unor abuzuri.',
+      'limit' => 'Ai atins limita maximă de SMS-uri pentru ziua de astăzi.',
+      'blocked' => 'Nu se poate trimite mesajul către acest numâr; numârul introdus este blocat din cauza unor abuzuri.',
     );
 
     $rules = array(
@@ -58,7 +58,7 @@ class SmsController extends \BaseController {
         array('echo "'. Input::get('mesaj') .'" | sudo -u gammu gammu-smsd-inject TEXT '. Input::get('telefon'))
       );
 
-      return Redirect::to('sms')->with('success', 'Mesajul tau este in curs de trimitere');
+      return Redirect::to('sms')->with('success', 'Mesajul tău este în curs de trimitere');
     }
   }
 

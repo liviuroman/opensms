@@ -5,7 +5,7 @@
 
 <h3>Contact</h3>
 
-<p>Daca aveti intrebari, sugestii sau nelamuriri ma puteti contacta folosind formularul de mai jos. Incerc sa raspund in cel mai scurt timp posibil la fiecare email in parte.</p>
+<p>Dacă aveți întrebări, sugestii sau nelămuriri mă puteți contacta folosind formularul de mai jos. Încerc să răspund în cel mai scurt timp posibil la fiecare email în parte.</p>
 
 @if(Session::has('success'))
   <div class="alert alert-success alert-dismissible" role="alert">

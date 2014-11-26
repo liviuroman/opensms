@@ -3,7 +3,7 @@
 @section('content')
 <div>
 
-<h3>Noutati <a href="{{ URL::to('news/rss') }}" title="RSS Feed" target="_blank"><img src="/img/rssicon.png" width="20"></a></h3>
+<h3>Noutăți <a href="{{ URL::to('news/rss') }}" title="RSS Feed" target="_blank"><img src="/img/rssicon.png" width="20"></a></h3>
 <br />
 
 @foreach($news as $new)

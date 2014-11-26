@@ -4,7 +4,7 @@
 
   @include('admin.topmenu')
   <div>
-    <h3>Ultimele stiri</h3>
+    <h3>Ultimele știri</h3>
 
     <table class="table table-hover">
       <thead>

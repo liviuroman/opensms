@@ -10,7 +10,7 @@ class AdminNewsController extends \BaseController {
 	public function index()
 	{
 		$news = News::orderBy('created_at', 'desc')->paginate(10);
-    return View::make('admin.index')->with(compact('news'));
+    	return View::make('admin.index')->with(compact('news'));
 	}
 
 
