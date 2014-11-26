@@ -13,6 +13,7 @@
           <th>UID</th>
           <th>Telefon</th>
           <th>Mesaj</th>
+          <th>Sursa</th>
           <th>Data</th>
         </tr>
       </thead>
@@ -23,6 +24,7 @@
           <td>{{ $sms->uid }}</td>
           <td>{{ $sms->telefon }}</td>
           <td>{{ $sms->mesaj }}</td>
+          <td>{{ $sms->from }}</td>
           <td>{{ $sms->sent_at }}</td>
         </tr>
       @endforeach
