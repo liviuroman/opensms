@@ -27,7 +27,7 @@
   <div class="form-group">
     <label for="name" class="col-sm-2 control-label">Nume:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="name" name="name" value="{{ Input::old('name') }}" placeholder="Introdu numele tau" required>
+      <input type="text" class="form-control" id="name" name="name" value="{{ Input::old('name') }}" placeholder="Introdu numele tău" required>
     </div>
   </div>
   <div class="form-group">
@@ -39,7 +39,7 @@
   <div class="form-group">
     <label for="message" class="col-sm-2 control-label">Mesaj:</label>
     <div class="col-sm-10">
-      <textarea class="form-control" rows="3" name="message" placeholder="Intrebari / sugestii / nelamuriri" required>{{ Input::old('message') }}</textarea>
+      <textarea class="form-control" rows="3" name="message" placeholder="Întrebări / sugestii / nelămuriri" required>{{ Input::old('message') }}</textarea>
     </div>
   </div>
   <div class="form-group">
