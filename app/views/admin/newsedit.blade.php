@@ -1,10 +1,10 @@
-@extends('master', ['page_title' => 'Editeaza stire - OpenSMS'])
+@extends('master', ['page_title' => 'Editează știre - OpenSMS'])
 
 @section('content')
 
   @include('admin.topmenu')
   <div>
-    <h3>Editeaza stire</h3>
+    <h3>Editează știre</h3>
 
     @if ($errors->has())
       <div class="alert alert-danger alert-dismissible" role="alert">
@@ -24,7 +24,7 @@
       </div>
 
       <div class="form-group">
-        <label for="body" class="col-sm-2 control-label">Body:</label>
+        <label for="body" class="col-sm-2 control-label">Conținut:</label>
         <div class="col-sm-10">
           <textarea class="form-control" rows="10" name="body" required>{{ $news->body }}</textarea>
         </div>
@@ -32,7 +32,7 @@
       
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-success">Editeaza</button>
+          <button type="submit" class="btn btn-success">Editează</button>
         </div>
       </div>
     {{ Form::close() }}  

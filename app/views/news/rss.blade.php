@@ -4,7 +4,7 @@
 <channel>
   <title>RSS feed - OpenSMS</title>
   <link>http://opensms.ro</link>
-  <description>OpenSMS este un proiect personal, non-profit care ofera posibilitatea trimiterii de SMS-uri gratuit catre orice telefon mobil din Romania.</description>
+  <description>OpenSMS este un proiect personal, non-profit care oferă posibilitatea trimiterii de SMS-uri gratuit către orice telefon mobil din România.</description>
 
   @foreach($news as $item)
     <item>

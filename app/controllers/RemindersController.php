@@ -20,7 +20,7 @@ class RemindersController extends Controller {
 	public function postRemind()
 	{
 		$response = Password::remind(Input::only('email'), function($message){
-						$message->subject('Recuperare parola - OpenSMS');
+						$message->subject('Recuperare parolă - OpenSMS');
 					});
 		switch ($response)
 		{

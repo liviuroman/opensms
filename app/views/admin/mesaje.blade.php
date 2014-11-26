@@ -1,10 +1,10 @@
-@extends('master', ['page_title' => 'SMSuri trimise - OpenSMS'])
+@extends('master', ['page_title' => 'SMS-uri trimise - OpenSMS'])
 
 @section('content')
 
   @include('admin.topmenu')
   <div>
-    <h3>SMSuri trimise</h3>
+    <h3>SMS-uri trimise</h3>
 
     <table class="table table-hover">
       <thead>

@@ -37,7 +37,7 @@ class UserController extends \BaseController {
 			$user->name = Input::get('name');
 			$user->email = Input::get('email');
 			$user->password = Hash::make(Input::get('password'));
-      $user->api_code = str_random(40);
+			$user->api_code = str_random(40);
 
 			$user->save();
 
@@ -49,7 +49,7 @@ class UserController extends \BaseController {
       /* trimitere notificare BOXCAR */
       Queue::push('\Boxcar', array('id' => $user->id, 'name' => $user->name, 'email' => $user->email));
 
-			return Redirect::to('user/create')->with('success', 'Felicitari, contul tau a fost creat! Te rog verifica adresa de email pentru a confirma contul');
+			return Redirect::to('user/create')->with('success', 'Felicitări, contul tău a fost creat! Te rog verifică adresa de email pentru a confirma contul');
 		}
 	}
 
@@ -64,9 +64,9 @@ class UserController extends \BaseController {
       $user->active = true;
       $user->save();
 
-      return Redirect::to('user/login')->with('success', 'Contul tau a fost activat! Te rugam sa te loghezi folosind formularul de mai jos.');
+      return Redirect::to('user/login')->with('success', 'Contul tău a fost activat! Te rugăm să te loghezi folosind formularul de mai jos.');
     } else {
-      return Redirect::to('user/login')->with('danger', 'Adresa ta de email nu a fost gasita sau contul este deja confirmat.');
+      return Redirect::to('user/login')->with('danger', 'Adresa ta de email nu a fost găsită sau contul este deja confirmat.');
     }
 	}
 
@@ -90,12 +90,12 @@ class UserController extends \BaseController {
             $message->to(Input::get('email'))->subject('Confirmare cont - OpenSMS');
           });
 
-          return Redirect::to('user/login')->with('success', 'Emailul de confirmare a fost trimis! Te rog verifica adresa de email pentru a confirma contul');
+          return Redirect::to('user/login')->with('success', 'Emailul de confirmare a fost trimis! Te rog verifică adresa de email pentru a confirma contul');
         } else {
           return Redirect::to('user/reconfirm')->with('danger', 'Acest cont a fost confirmat deja');
         }
       } else {
-        return Redirect::to('user/reconfirm')->with('danger', 'Adresa de email nu exista');
+        return Redirect::to('user/reconfirm')->with('danger', 'Adresa de email nu există');
       }
     }
 
@@ -125,7 +125,7 @@ class UserController extends \BaseController {
 					return Redirect::to('user/login')->with('danger', 'Parola sau adresa de email sunt incorecte')->withInput();
 				}
 			} else {
-				return Redirect::to('user/login')->with('danger', 'Contul tau nu este activ. Te rugam sa iti activezi contul folosind linkul primit pe adresa de email cu care te-ai inregistrat.')->withInput();
+				return Redirect::to('user/login')->with('danger', 'Contul tău nu este activ. Te rugăm sa îți activezi contul folosind linkul primit pe adresa de email cu care te-ai înregistrat.')->withInput();
 			}
 		}
 
@@ -160,7 +160,7 @@ class UserController extends \BaseController {
 
       $user->save();
 
-      return Redirect::to('user/account')->with('success', 'Parola a fost actualizata');
+      return Redirect::to('user/account')->with('success', 'Parola a fost actualizată');
     }
 	}
 
@@ -172,7 +172,7 @@ class UserController extends \BaseController {
 
     $user->save();
 
-    return Redirect::to('user/account')->with('success', 'Codul tau API a fost schimbat cu succes.');
+    return Redirect::to('user/account')->with('success', 'Codul tău API a fost schimbat cu succes.');
   }
 
 

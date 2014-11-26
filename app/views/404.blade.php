@@ -5,7 +5,7 @@
 
 <h3>Eroare 404</h3>
 
-<p>Din pacate pagina accesata nu exista.</p>
+<p>Din păcate pagina accesată nu există.</p>
 
 <p></p>
 </div>
