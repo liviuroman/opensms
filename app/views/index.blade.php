@@ -4,7 +4,7 @@
 	<div class="jumbotron" style="text-align:left">
 		<h1>OpenSMS <span class="badge">beta</span></h1>
 		<p class="lead">Cu OpenSMS poți trimite SMS-uri gratuit către orice telefon mobil din România. De asemenea, poți integra <b>OpenSMS</b> în orice aplicație pentru a trimite alerte SMS în timp real.</p>
-		<p><a class="btn btn-lg btn-success" href="{{ URL::to('user/create') }}" role="button">Inregistrare &raquo;</a></p>
+		<p><a class="btn btn-lg btn-success" href="{{ URL::to('user/create') }}" role="button">Înregistrare &raquo;</a></p>
 	</div>
 
 	<div class="row marketing">
