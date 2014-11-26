@@ -52,6 +52,8 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 	Route::group(array('before'=>'admin'), function() {
 		Route::resource('admin/news', 'AdminNewsController', array('except' => array('show')));
 		Route::resource('admin/numereblocate', 'AdminBlockController', array('except' => array('create', 'show')));
+		Route::get('admin/users', 'AdminStatsController@users');
+		Route::get('admin/mesaje', 'AdminStatsController@mesaje');
 	});
 
 
