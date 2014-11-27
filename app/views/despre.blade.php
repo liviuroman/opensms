@@ -11,9 +11,9 @@
 
 <p>&nbsp;</p>
 
-<p><b>Statistici real-time</b></p>
+<p><b>Statistici generale în timp real</b></p>
 <ul>
-  <li>Utilizatori inregistrati: {{ $users }}</li>
+  <li>Utilizatori înregistrați: {{ $users }}</li>
   <li>Mesaje trimise: {{ $mesaje }}</li>
 </ul>
 
