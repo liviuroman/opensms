@@ -3,14 +3,15 @@
 
 <channel>
   <title>RSS feed - OpenSMS</title>
-  <link>http://opensms.ro</link>
   <description>OpenSMS este un proiect personal, non-profit care oferă posibilitatea trimiterii de SMS-uri gratuit către orice telefon mobil din România.</description>
+  <link>http://opensms.ro</link>
+  
 
   @foreach($news as $item)
     <item>
-      <title>{{{ $item->titlu }}}</title>
+      <title>{{ $item->titlu }}</title>
+      <description>{{ strip_tags($item->body) }}</description>
       <link>{{ URL::to('news') }}/{{ $item->id }}</link>
-      <description>{{{ $item->body }}}</description>
     </item>
   @endforeach
 </channel>
