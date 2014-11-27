@@ -9,6 +9,14 @@
 
 <p>Serviciul poate fi folosit de către oricine, dar a fost conceput în ideea de a ajuta dezvoltatorii să integreze alerte SMS în aplicațiile lor.</p>
 
-<p></p>
+<p>&nbsp;</p>
+
+<p><b>Statistici real-time</b></p>
+<ul>
+  <li>Utilizatori inregistrati: {{ $users }}</li>
+  <li>Mesaje trimise: {{ $mesaje }}</li>
+</ul>
+
+<p>&nbsp;</p>
 </div>
 @endsection

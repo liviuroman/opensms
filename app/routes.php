@@ -58,7 +58,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 
 /* Static pages */
-	Route::get('despre', function(){ return View::make('despre'); });
+	Route::get('despre', 'HomeController@despre');
 	Route::get('intrebari-frecvente', function(){ return View::make('intrebari-frecvente'); });
 	Route::get('contact', function(){ return View::make('contact'); });
 	Route::post('contact', 'ContactController@send')->before('csrf');
