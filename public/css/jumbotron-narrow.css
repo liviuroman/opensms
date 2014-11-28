@@ -16,6 +16,10 @@ body {
 	border-bottom: 1px solid #e5e5e5;
 	margin-bottom: 30px;
 }
+.navbar-default {
+	background-color: #fff;
+	border-color: none;
+}
 .navbar-collapse {
 	padding: 0;
 	margin: 0;
