@@ -8,7 +8,7 @@
 	<title>{{{ $page_title }}}</title>
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+	<link href="/css/jumbotron-narrow.css?v=0.1" rel="stylesheet">
 </head>
 
 <body>
@@ -30,11 +30,11 @@
 					<li><a href="{{ URL::to('intrebari-frecvente') }}">Întrebări frecvente</a></li>
 					<li><a href="{{ URL::to('news') }}">Noutăți</a></li>
 
+					@if(Auth::check())
 					<li class="visible-xs"><a href="{{ URL::to('sms') }}"><span class="glyphicon glyphicon-envelope"></span> Trimite SMS</a></li>
 					<li class="visible-xs"><a href="{{ URL::to('sms/sent') }}"><span class="glyphicon glyphicon-send"></span> Mesaje trimise</a></li>
 					<li class="visible-xs"><a href="{{ URL::to('user/account') }}"><span class="glyphicon glyphicon-user"></span> Contul meu</a></li>
 					<li class="visible-xs"><a href="{{ URL::to('user/logout') }}"><span class="glyphicon glyphicon-remove-sign"></span> Ieșire ({{{ Auth::user()->name }}})</a></li>
-					@if(Auth::check())
 					<li role="presentation" class="active dropdown hidden-xs">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							Salut, {{{ Auth::user()->name }}} <span class="caret"></span>
