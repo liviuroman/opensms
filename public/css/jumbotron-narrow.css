@@ -38,6 +38,14 @@ body {
 	border-top: 1px solid #e5e5e5;
 }
 
+.footer .copyright {
+	float: left;
+}
+
+.footer .host {
+	float: right;
+}
+
 @media (min-width: 768px) {
 	.container {
 		max-width: 730px;
@@ -65,12 +73,20 @@ body {
 	.navbar-nav {
 		margin: 0;
 	}
-
 	.navbar-nav {
 		padding-bottom: 15px;
 	}
 	.text-muted {
 		margin: 8px 19px;
+	}
+	.footer {
+		text-align: center;
+	}
+	.footer .copyright, .footer .host {
+		float: none;
+	}
+	.form-group.login .btn {
+		margin: 5px 0;
 	}
 }
 

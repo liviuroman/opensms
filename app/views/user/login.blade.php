@@ -41,7 +41,7 @@
 					<input type="password" class="form-control" id="password" name="password" placeholder="Parola contului" required>
 				</div>
 			</div>
-			<div class="form-group">
+			<div class="form-group login">
 				<div class="col-sm-offset-2 col-sm-2">
 					<button type="submit" class="btn btn-success">Autentificare</button>
 				</div>

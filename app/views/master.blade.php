@@ -8,7 +8,7 @@
 	<title>{{{ $page_title }}}</title>
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/jumbotron-narrow.css?v=0.1" rel="stylesheet">
+	<link href="/css/jumbotron-narrow.css?v=0.1.1" rel="stylesheet">
 </head>
 
 <body>
@@ -57,8 +57,8 @@
 		@yield('content')
 
 		<div class="footer">
-			<p class="pull-left">&copy; <a href="{{ URL::to('/') }}">OpenSMS</a> 2014 | <a href="{{ URL::to('contact') }}">Contact</a></p>
-			<p class="pull-right"><a href="{{ URL::to('api') }}">API</a> | Hosted on <a href="http://www.vultr.com/?ref=6809771" target="_blank" rel="nofollow">VULTR</a></p>
+			<p class="copyright">&copy; <a href="{{ URL::to('/') }}">OpenSMS</a> 2014 | <a href="{{ URL::to('contact') }}">Contact</a></p>
+			<p class="host"><a href="{{ URL::to('api') }}">API</a> | Hosted on <a href="http://www.vultr.com/?ref=6809771" target="_blank" rel="nofollow">VULTR</a></p>
 		</div>
 
 	</div> <!-- /container -->
