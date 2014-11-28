@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 	<title>{{{ $page_title }}}</title>
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+	<link href="/css/jumbotron-narrow.css?v=0.1.1" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +29,13 @@
 					<li><a href="{{ URL::to('despre') }}">Despre</a></li>
 					<li><a href="{{ URL::to('intrebari-frecvente') }}">Întrebări frecvente</a></li>
 					<li><a href="{{ URL::to('news') }}">Noutăți</a></li>
+
 					@if(Auth::check())
-					<li role="presentation" class="active dropdown">
+					<li class="visible-xs"><a href="{{ URL::to('sms') }}"><span class="glyphicon glyphicon-envelope"></span> Trimite SMS</a></li>
+					<li class="visible-xs"><a href="{{ URL::to('sms/sent') }}"><span class="glyphicon glyphicon-send"></span> Mesaje trimise</a></li>
+					<li class="visible-xs"><a href="{{ URL::to('user/account') }}"><span class="glyphicon glyphicon-user"></span> Contul meu</a></li>
+					<li class="visible-xs"><a href="{{ URL::to('user/logout') }}"><span class="glyphicon glyphicon-remove-sign"></span> Ieșire ({{{ Auth::user()->name }}})</a></li>
+					<li role="presentation" class="active dropdown hidden-xs">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							Salut, {{{ Auth::user()->name }}} <span class="caret"></span>
 						</a>
@@ -52,8 +57,8 @@
 		@yield('content')
 
 		<div class="footer">
-			<p class="pull-left">&copy; <a href="{{ URL::to('/') }}">OpenSMS</a> 2014 | <a href="{{ URL::to('contact') }}">Contact</a></p>
-			<p class="pull-right"><a href="{{ URL::to('api') }}">API</a> | Hosted on <a href="http://www.vultr.com/?ref=6809771" target="_blank" rel="nofollow">VULTR</a></p>
+			<p class="copyright">&copy; <a href="{{ URL::to('/') }}">OpenSMS</a> 2014 | <a href="{{ URL::to('contact') }}">Contact</a></p>
+			<p class="host"><a href="{{ URL::to('api') }}">API</a> | Hosted on <a href="http://www.vultr.com/?ref=6809771" target="_blank" rel="nofollow">VULTR</a></p>
 		</div>
 
 	</div> <!-- /container -->
