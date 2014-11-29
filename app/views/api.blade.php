@@ -30,8 +30,9 @@
 <hr>
 
 <p><b>Cum văd câte mesaje mai pot trimite azi?</b></p>
-<p>Prin intermediul unei simple interogări API afli câte mesaje mai poți trimite azi:</p>
+<p>Prin intermediul unei simple interogări API:</p>
 <p><code>http://opensms.ro/api/count/API_CODE</code></p>
+<p>Răspunsul returnat este un număr</p>
 
 
 <p>&nbsp;</p>
