@@ -3,7 +3,7 @@
 @section('content')
 <div>
 
-<h3>Trimite SMS</h3>
+<h3>Trimite SMS <small>(Mesaje de trimis astazi: {{ App::make('ApiController')->count(Auth::user()->api_code) }})</small></h3>
 
 @if(Session::has('success'))
 <div class="alert alert-success alert-dismissible" role="alert">

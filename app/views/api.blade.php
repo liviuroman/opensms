@@ -26,6 +26,14 @@
 <p><code>http://opensms.ro/api/sent/API_CODE</code></p>
 <p>API_CODE - acesta se găsește în contul fiecărui utilizator</p>
 <p>Răspunsul requestului este trimis înapoi în format JSON.</p>
+
+<hr>
+
+<p><b>Cum văd câte mesaje mai pot trimite azi?</b></p>
+<p>Prin intermediul unei simple interogări API afli câte mesaje mai poți trimite azi:</p>
+<p><code>http://opensms.ro/api/count/API_CODE</code></p>
+
+
 <p>&nbsp;</p>
 </div>
 @endsection

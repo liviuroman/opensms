@@ -38,6 +38,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 	Route::get('api', function(){ return View::make('api'); });
 	Route::get('api/send/{api_code}/{telefon}/{mesaj}', 'ApiController@send');
 	Route::get('api/sent/{api_code}', 'ApiController@sent');
+	Route::get('api/count/{api_code}', 'ApiController@count');
 	// opensms.app/api/send/NyKRLvWjr5gosFGHj0XD6vbEzMqdPrWpYWBb3ZOj/0745980598/test
 
 

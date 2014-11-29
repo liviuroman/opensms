@@ -69,6 +69,23 @@ class ApiController extends BaseController {
     }
 
   }
+
+  public function count($api_code)
+  {
+    $user = User::where('api_code', '=', $api_code)->first();
+    
+    if($user === null){
+      return 0;
+    } else {
+
+      $today = Sms::where('uid', '=', $user->id)
+                  ->where('sent_at', '>=', date('Y-m-d'))
+                  ->where('sent_at', '<', date("Y-m-d", time() + 86400))
+                  ->count();
+
+      return $user->limit - $today;
+    }
+  }
   
 
 }
