@@ -58,8 +58,11 @@
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
       această sumă este folosită pentru a alimenta cu credit cartela de pe care sunt trimise SMS-urile și pentru a îmbunătății configurația hardware a proiectului;</li>
-    <li>Dacă ești dezvoltator și dorești să contribui la codul OpenSMS o poți face prin intermediul GitHub (<a href="http://github.com/memelea/opensms" target="_blank" title="OpenSMS on GitHub">http://github.com/memelea/opensms</a>).</li>
+    <li>Dacă ești dezvoltator și dorești să contribui la codul OpenSMS o poți face prin intermediul GitHub (<a href="http://github.com/memelea/opensms" target="_blank" title="OpenSMS on GitHub">http://github.com/memelea/opensms</a>);</li>
   </ol>
+  <ul>
+    <li>Pe lista mea de dorințe: <a href="http://profitshare.ro/l/1130185" target="_blank">MicroServer HP ProLiant Gen8</a> - acesta va fi folosit pentru a înlocui vechiul "server".</li>
+  </ul>
 </p>
 
 <hr>

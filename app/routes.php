@@ -83,3 +83,6 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 /* Webmaster tools and others */
 	Route::get('google384a3eb739aea99b.html', function(){ return 'google-site-verification: google384a3eb739aea99b.html'; });
+
+/* Validare profitshare */
+	Route::get('9a048a1ac2d717a950299c92c27b3d10', function(){ return '9a048a1ac2d717a950299c92c27b3d10'; });
