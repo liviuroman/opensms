@@ -4,7 +4,7 @@ class ApiController extends BaseController {
 
   public function send($api_code, $telefon, $mesaj)
   {
-    $auth = User::where('api_code', '=', $api_code)->first();
+    $auth = User::whereRaw('BINARY api_code = ?', array($api_code))->first();
 
     /* verificare cod api */
     if($auth === null){
@@ -58,12 +58,12 @@ class ApiController extends BaseController {
 
   public function sent($api_code)
   {
-    $auth = User::where('api_code', '=', $api_code)->first();
+    $auth = User::whereRaw('BINARY api_code = ?', array($api_code))->first();
 
     if($auth === null){
       return Response::json(array('error' => 'Codul API folosit nu se găsește în baza de date'));
     } else {
-      $sms = Sms::where('uid', '=', $auth->id)->take(20)->get(array('telefon', 'mesaj', 'from', 'sent_at'))->toArray();;
+      $sms = Sms::where('uid', '=', $auth->id)->take(20)->orderBy('sent_at', 'desc')->get(array('telefon', 'mesaj', 'from', 'sent_at'))->toArray();
       
       return $sms;
     }
@@ -72,7 +72,7 @@ class ApiController extends BaseController {
 
   public function count($api_code)
   {
-    $user = User::where('api_code', '=', $api_code)->first();
+    $user = User::whereRaw('BINARY api_code = ?', array($api_code))->first();
     
     if($user === null){
       return 0;
