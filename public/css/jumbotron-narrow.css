@@ -128,3 +128,8 @@ body {
 .text-muted a:hover{
 	text-decoration: none;
 }
+
+/* custom */
+.col-lg-6{
+	margin-bottom: 35px;
+}

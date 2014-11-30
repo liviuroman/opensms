@@ -8,7 +8,7 @@
 	<title>{{{ $page_title }}}</title>
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/jumbotron-narrow.css?v=0.1.1" rel="stylesheet">
+	<link href="/css/jumbotron-narrow.css?v=0.1.2" rel="stylesheet">
 </head>
 
 <body>

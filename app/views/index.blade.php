@@ -12,28 +12,18 @@
 
 	<div class="row marketing">
 		<div class="col-lg-6">
-			<div class="mini-box">
-				<h4>Gratuit</h4>
-				<p>Trimiți <b>SMS gratis</b> către orice telefon mobil din România, indiferent de rețeaua mobilă.</p>
-			</div>
+			<h4>Gratuit</h4>
+			<p>Trimiți <b>SMS gratis</b> către orice telefon mobil din România, indiferent de rețeaua mobilă.</p>
+	
+			<h4>Pentru dezvoltatori</h4>
+			<p>Integrează OpenSMS în aplicația ta prin intermediul unui API simplu și prietenos.</p>
 		</div>
 		<div class="col-lg-6">
-			<div class="mini-box">
-				<h4>Pentru dezvoltatori</h4>
-				<p>Integrează OpenSMS în aplicația ta prin intermediul unui API simplu și prietenos.</p>
-			</div>
-		</div>
-		<div class="col-lg-6">
-			<div class="mini-box">
-				<h4>Non-Stop</h4>
-				<p>Te poți autentifica oricând în contul tău OpenSMS și să trimiți un mesaj oricui dorești tu.</p>
-			</div>
-		</div>
-		<div class="col-lg-6">
-			<div class="mini-box">
-				<h4>Feedback</h4>
-				<p>Comunicăm în permanență cu utilizatorii noștri pentru a aduce îmbunătățiri serviciului.</p>
-			</div>
+			<h4>Non-Stop</h4>
+			<p>Te poți autentifica oricând în contul tău OpenSMS și să trimiți un mesaj oricui dorești tu.</p>
+			
+			<h4>Feedback</h4>
+			<p>Comunicăm în permanență cu utilizatorii noștri pentru a aduce îmbunătățiri serviciului.</p>
 		</div>
 	</div>
 @endsection
