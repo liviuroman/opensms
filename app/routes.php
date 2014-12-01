@@ -86,6 +86,3 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 /* Validare profitshare */
 	Route::get('9a048a1ac2d717a950299c92c27b3d10', function(){ return '9a048a1ac2d717a950299c92c27b3d10'; });
-
-/* SSL Certification validation */
-	//Route::get('3C42BA6A336D31314E5629C822B9764D.txt', function(){ return '471DA0A4BB0EA0A4AD5CE6C5A15B4AEBF41AFC76'; });
