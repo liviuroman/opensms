@@ -38,7 +38,7 @@
 <hr>
 
 <p><b>Cum folosesc API-ul OpenSMS?</b></p>
-<p>Documentația API se găsește aici: <a href="{{ URL::to('api') }}">http://opensms.ro/api</a>.</p>
+<p>Documentația API se găsește aici: <a href="{{ URL::to('api') }}">https://opensms.ro/api</a>.</p>
 
 <hr>
 
