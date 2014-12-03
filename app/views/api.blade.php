@@ -11,7 +11,7 @@
 
 <p><b>Cum trimit un SMS?</b></p>
 <p>Cea mai simplă metodă este să trimiți un <b>POST request</b> cu ajutorul <b>CURL</b> folosind următorul model:</p>
-<p><code>curl --data "api_code=<b>API_CODE</b>&amp;telefon=<b>TELEFON</b>&amp;mesaj=<b>MESAJ</b>" https://opensms.ro/api/send/</code></p>
+<p><code>curl --data "api_code=<b>API_CODE</b>&amp;telefon=<b>TELEFON</b>&amp;mesaj=<b>MESAJ</b>" https://opensms.ro/api/send</code></p>
 <p>Cuvintele îngroșate trebuie înlocuite după cum urmează:</p>
 <p>
   API_CODE - acesta se găsește în contul fiecărui utilizator<br />
