@@ -43,6 +43,7 @@
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="{{ URL::to('sms') }}">Trimite SMS <span class="glyphicon glyphicon-envelope"></span></a></li>
 							<li><a href="{{ URL::to('sms/sent') }}">Mesaje trimise <span class="glyphicon glyphicon-send"></span></a></li>
+							<li><a href="{{ URL::to('sms/inbox') }}">Mesaje primite <span class="glyphicon glyphicon-inbox"></span></a></li>
 							<li><a href="{{ URL::to('user/account') }}">Contul meu <span class="glyphicon glyphicon-user"></span></a></li>
 							<li role="presentation" class="divider"></li>
 							<li><a href="{{ URL::to('user/logout') }}">Ieșire <span class="glyphicon glyphicon-remove-sign"></span></a></li>
