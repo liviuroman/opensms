@@ -32,6 +32,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 	Route::get('sms', function(){ return View::make('sms.index'); })->before('auth');
 	Route::get('sms/sent', 'SmsController@sent')->before('auth');
 	Route::post('sms/send', 'SmsController@send')->before('csrf')->before('auth');
+	Route::get('sms/inbox', 'SmsController@inbox')->before('auth');
 
 
 /* API */

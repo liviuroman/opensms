@@ -65,9 +65,18 @@ class SmsController extends \BaseController {
 
   public function sent()
   {
-    $mesaje = Sms::where('uid', '=', Auth::user()->id)->orderBy('sent_at', 'desc')->take(10)->get();
+    $mesaje = Sms::where('uid', '=', Auth::user()->id)->orderBy('sent_at', 'desc')->paginate(10);
     
     return View::make('sms.sent')->with(compact('mesaje'));
+  }
+
+  public function inbox()
+  {
+    $mesaje = Inbox::where('SenderNumber', '!=', 'MyVodafone')
+                  ->where('SenderNumber', '!=', 'Vodafone')
+                  ->orderBy('ReceivingDateTime', 'desc')->paginate(20);
+    
+    return View::make('sms.inbox')->with(compact('mesaje'));
   }
 
 }

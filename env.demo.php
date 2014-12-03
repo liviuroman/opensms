@@ -15,6 +15,14 @@ return array(
   'mysql_username' => 'asd',
   'mysql_password' => 'asd',
 
+  /*
+  **  app/config/database.php - from line 66
+  */
+  'milan_mysql_host' => 'host',
+  'milan_mysql_database' => 'asd',
+  'milan_mysql_username' => 'asd',
+  'milan_mysql_password' => 'asd',
+
 
   /*
   **  app/config/mail.php - from line 83

@@ -43,5 +43,7 @@
   </tbody>
 </table>
 
+{{ $mesaje->links() }}
+
 </div>
 @endsection

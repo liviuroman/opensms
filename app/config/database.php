@@ -63,6 +63,17 @@ return array(
 			'prefix'    => '',
 		),
 
+		'milan' => array(
+			'driver'    => 'mysql',
+			'host'      => $_ENV['milan_mysql_host'],
+			'database'  => $_ENV['milan_mysql_database'],
+			'username'  => $_ENV['milan_mysql_username'],
+			'password'  => $_ENV['milan_mysql_password'],
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
+
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',

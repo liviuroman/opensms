@@ -33,6 +33,7 @@
 					@if(Auth::check())
 					<li class="visible-xs"><a href="{{ URL::to('sms') }}"><span class="glyphicon glyphicon-envelope"></span> Trimite SMS</a></li>
 					<li class="visible-xs"><a href="{{ URL::to('sms/sent') }}"><span class="glyphicon glyphicon-send"></span> Mesaje trimise</a></li>
+					<li class="visible-xs"><a href="{{ URL::to('sms/inbox') }}"><span class="glyphicon glyphicon-inbox"></span> Mesaje primite</a></li>
 					<li class="visible-xs"><a href="{{ URL::to('user/account') }}"><span class="glyphicon glyphicon-user"></span> Contul meu</a></li>
 					<li class="visible-xs"><a href="{{ URL::to('user/logout') }}"><span class="glyphicon glyphicon-remove-sign"></span> Ieșire ({{{ Auth::user()->name }}})</a></li>
 					<li role="presentation" class="active dropdown hidden-xs">
