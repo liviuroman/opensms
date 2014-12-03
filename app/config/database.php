@@ -69,6 +69,7 @@ return array(
 			'database'  => $_ENV['milan_mysql_database'],
 			'username'  => $_ENV['milan_mysql_username'],
 			'password'  => $_ENV['milan_mysql_password'],
+			'port'			=> $_ENV['milan_mysql_port'],
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
