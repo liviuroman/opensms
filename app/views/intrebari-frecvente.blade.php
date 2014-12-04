@@ -60,10 +60,15 @@
       această sumă este folosită pentru a alimenta cu credit cartela de pe care sunt trimise SMS-urile și pentru a îmbunătății configurația hardware a proiectului;</li>
     <li>Dacă ești dezvoltator și dorești să contribui la codul OpenSMS o poți face prin intermediul GitHub (<a href="http://github.com/memelea/opensms" target="_blank" title="OpenSMS on GitHub">http://github.com/memelea/opensms</a>);</li>
   </ol>
-  <ul>
-    <li>Pe lista mea de dorințe: <a href="http://profitshare.ro/l/1130185" target="_blank">MicroServer HP ProLiant Gen8</a> - acesta va fi folosit pentru a înlocui vechiul "server".</li>
-  </ul>
 </p>
+
+<hr>
+
+<p><b>Wishlist</b></p>
+<ul>
+  <li><a href="http://profitshare.ro/l/1149436" target="_blank">HDD Toshiba 500GB</a> - pentru a înlocui actualul hard-disk, care nu mai are o viata prea lunga;</li>
+  <li><a href="http://profitshare.ro/l/1130185" target="_blank">MicroServer HP ProLiant Gen8</a> - pentru a înlocui actualul "server".</li>
+</ul>
 
 <hr>
 
