@@ -57,7 +57,7 @@
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
-      această sumă este folosită pentru a alimenta cu credit cartela de pe care sunt trimise SMS-urile și pentru a îmbunătății configurația hardware a proiectului;</li>
+      această sumă este folosită pentru a alimenta cu credit cartela de pe care sunt trimise SMS-urile și pentru a îmbunătăți configurația hardware a proiectului;</li>
     <li>Dacă ești dezvoltator și dorești să contribui la codul OpenSMS o poți face prin intermediul GitHub (<a href="http://github.com/memelea/opensms" target="_blank" title="OpenSMS on GitHub">http://github.com/memelea/opensms</a>);</li>
   </ol>
 </p>
@@ -66,7 +66,7 @@
 
 <p><b>Wishlist</b></p>
 <ul>
-  <li><a href="http://profitshare.ro/l/1149436" target="_blank">HDD Toshiba 500GB</a> - pentru a înlocui actualul hard-disk, care nu mai are o viata prea lunga;</li>
+  <li><a href="http://profitshare.ro/l/1149436" target="_blank">HDD Toshiba 500GB</a> - pentru a înlocui actualul hard-disk, care nu mai are o viață prea lungă;</li>
   <li><a href="http://profitshare.ro/l/1130185" target="_blank">MicroServer HP ProLiant Gen8</a> - pentru a înlocui actualul "server".</li>
 </ul>
 
