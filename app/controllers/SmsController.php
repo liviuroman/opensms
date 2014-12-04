@@ -74,7 +74,9 @@ class SmsController extends \BaseController {
   {
     $mesaje = Inbox::where('SenderNumber', '!=', 'MyVodafone')
                   ->where('SenderNumber', '!=', 'Vodafone')
-                  ->orderBy('ReceivingDateTime', 'desc')->paginate(20);
+                  ->orderBy('ReceivingDateTime', 'desc')
+                  ->remember(1)
+                  ->paginate(20);
     
     return View::make('sms.inbox')->with(compact('mesaje'));
   }
