@@ -44,8 +44,8 @@ class ApiController extends BaseController {
     /* salveaza mesajul in outbox/milan pentru trimitere */
     $outbox = new Outbox;
     $outbox->InsertIntoDB = date('Y-m-d H:i:s');
-    $outbox->DestinationNumber = Input::get('telefon');
-    $outbox->TextDecoded = Input::get('mesaj');
+    $outbox->DestinationNumber = $telefon;
+    $outbox->TextDecoded = $mesaj;
     $outbox->save();
 
     /* salveaza mesajul in localdb */
@@ -107,8 +107,8 @@ class ApiController extends BaseController {
     /* salveaza mesajul in outbox/milan pentru trimitere */
     $outbox = new Outbox;
     $outbox->InsertIntoDB = date('Y-m-d H:i:s');
-    $outbox->DestinationNumber = Input::get('telefon');
-    $outbox->TextDecoded = Input::get('mesaj');
+    $outbox->DestinationNumber = $telefon;
+    $outbox->TextDecoded = $mesaj;
     $outbox->save();
 
     /* salveaza mesajul in localdb */
