@@ -41,20 +41,21 @@ class ApiController extends BaseController {
       return Response::json(array('error' => 'Mesajul tău este mai mare de 160 de caractere'));
     }
 
-    $sms = new Sms;
+    /* salveaza mesajul in outbox/milan pentru trimitere */
+    $outbox = new Outbox;
+    $outbox->InsertIntoDB = date('Y-m-d H:i:s');
+    $outbox->DestinationNumber = Input::get('telefon');
+    $outbox->TextDecoded = Input::get('mesaj');
+    $outbox->save();
 
+    /* salveaza mesajul in localdb */
+    $sms = new Sms;
     $sms->telefon = $telefon;
     $sms->mesaj = $mesaj;
     $sms->uid = $auth->id;
     $sms->from = 'api1';
     $sms->sent_at = date('Y-m-d H:i:s');
-
     $sms->save();
-
-    // comanda de trimitere mesaj
-    SSH::run(
-      array('echo "'. $mesaj .'" | sudo -u gammu gammu-smsd-inject TEXT '. $telefon)
-    );
 
     return Response::json(array('success' => 'Mesajul tău este în curs de trimitere'));
   }
@@ -103,20 +104,21 @@ class ApiController extends BaseController {
       return Response::json(array('error' => 'Mesajul tău este mai mare de 160 de caractere'));
     }
 
-    $sms = new Sms;
+    /* salveaza mesajul in outbox/milan pentru trimitere */
+    $outbox = new Outbox;
+    $outbox->InsertIntoDB = date('Y-m-d H:i:s');
+    $outbox->DestinationNumber = Input::get('telefon');
+    $outbox->TextDecoded = Input::get('mesaj');
+    $outbox->save();
 
+    /* salveaza mesajul in localdb */
+    $sms = new Sms;
     $sms->telefon = $telefon;
     $sms->mesaj = $mesaj;
     $sms->uid = $auth->id;
     $sms->from = 'api2';
     $sms->sent_at = date('Y-m-d H:i:s');
-
     $sms->save();
-
-    // comanda de trimitere mesaj
-    SSH::run(
-      array('echo "'. $mesaj .'" | sudo -u gammu gammu-smsd-inject TEXT '. $telefon)
-    );
 
     return Response::json(array('success' => 'Mesajul tău este în curs de trimitere'));
 

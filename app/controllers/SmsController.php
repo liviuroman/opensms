@@ -43,20 +43,21 @@ class SmsController extends \BaseController {
       return Redirect::to('sms')->withErrors($validation)->withInput();
     } else {
 
-      $sms = new Sms;
+      /* salveaza mesajul in outbox/milan pentru trimitere */
+      $outbox = new Outbox;
+      $outbox->InsertIntoDB = date('Y-m-d H:i:s');
+      $outbox->DestinationNumber = Input::get('telefon');
+      $outbox->TextDecoded = Input::get('mesaj');
+      $outbox->save();
 
+      /* salveaza mesajul in localdb */
+      $sms = new Sms;
       $sms->telefon = Input::get('telefon');
       $sms->mesaj = Input::get('mesaj');
       $sms->uid = Auth::user()->id;
       $sms->from = 'site';
       $sms->sent_at = date('Y-m-d H:i:s');
-
       $sms->save();
-
-      // comanda de trimitere mesaj
-      SSH::run(
-        array('echo "'. Input::get('mesaj') .'" | sudo -u gammu gammu-smsd-inject TEXT '. Input::get('telefon'))
-      );
 
       return Redirect::to('sms')->with('success', 'Mesajul tău este în curs de trimitere');
     }
