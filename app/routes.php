@@ -88,3 +88,6 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 /* Validare profitshare */
 	Route::get('9a048a1ac2d717a950299c92c27b3d10', function(){ return '9a048a1ac2d717a950299c92c27b3d10'; });
+
+/* Validare loader.io */
+	Route::get('loaderio-436f3555de993e80d01ebf3b7c9d97ad.txt', function(){ return 'loaderio-436f3555de993e80d01ebf3b7c9d97ad'; });
