@@ -129,6 +129,10 @@ body {
 	text-decoration: none;
 }
 
+.logo-index {
+	padding: 0 15px 30px 0;
+}
+
 /* custom */
 .col-lg-6{
 	margin-bottom: 35px;

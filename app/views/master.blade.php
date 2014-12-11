@@ -21,7 +21,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<h3 class="text-muted"><a href="{{ URL::to('/') }}">OpenSMS</a> <span class="badge">beta</span></h3>
+				<div class="logo">
+					<a href="{{ URL::to('/') }}"><img src="/img/opensms_beta.gif" border="0" title="OpenSMS Beta" alt="OpenSMS Beta"></a>
+				</div>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
