@@ -2,7 +2,7 @@
 
 @section('content')
 	<div class="jumbotron">
-		<a class="hidden-xs" href="{{ URL::to('/') }}"><img src="/img/opensms_big.gif" border="0" title="OpenSMS" alt="OpenSMS" class="logo-index"></a>
+		<a class="hidden-xs" href="{{ URL::to('/') }}" title="OpenSMS"><img src="/img/opensms_big.gif" border="0" alt="OpenSMS" class="logo-index"></a>
 		<p class="lead">Cu OpenSMS poți trimite SMS-uri gratuit către orice telefon mobil din România. De asemenea, poți integra <b>OpenSMS</b> în orice aplicație pentru a trimite alerte SMS în timp real.</p>
 		
 		@if(!Auth::check())

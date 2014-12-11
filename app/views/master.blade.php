@@ -22,7 +22,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<div class="logo">
-					<a href="{{ URL::to('/') }}"><img src="/img/opensms_beta.gif" border="0" title="OpenSMS Beta" alt="OpenSMS Beta"></a>
+					<a href="{{ URL::to('/') }}" title="OpenSMS"><img src="/img/opensms_beta.gif" border="0" alt="OpenSMS"></a>
 				</div>
 			</div>
 
