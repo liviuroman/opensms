@@ -14,4 +14,10 @@ class AdminStatsController extends \BaseController {
     return View::make('admin.mesaje')->with(compact('mesaje'));
   }
 
+  public function pending()
+  {
+    $mesaje = Outbox::paginate(10);
+    return View::make('admin.pending')->with(compact('mesaje'));
+  }
+
 }
